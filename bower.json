@@ -1,0 +1,19 @@
+{
+  "name": "SwitchBox",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MPL-2.0",
+  "main": "src/switchbox.js",
+  "ignore": [
+    ".*",
+    "test/**",
+    "Gruntfile.js",
+    "karma.*.js",
+    "bower.json",
+    "package.json"
+  ],
+  "dependencies": {
+    "dxjs": "devex-web-frontend/dxjs#^2.0.3",
+    "selectbox": "devex-web-frontend/selectbox#^2.0.2"
+  }
+}

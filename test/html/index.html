@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" media="all" href="../css/test.css">
+
+    <script src="../../lib/classlist/classList.js"></script>
+	<script src="../../lib/object-array-utils/src/object.js"></script>
+	<script src="../../lib/object-array-utils/src/array.js"></script>
+    <script type="text/javascript" src="../../lib/dxjs/src/dx.core.js"></script>
+    <script type="text/javascript" src="../../lib/dxjs/src/dx.bem.js"></script>
+    <script type="text/javascript" src="../../lib/dxjs/src/dx.date.js"></script>
+    <script type="text/javascript" src="../../lib/dxjs/src/dx.dom.js"></script>
+    <script type="text/javascript" src="../../lib/dxjs/src/dx.event.js"></script>
+    <script type="text/javascript" src="../../lib/dxjs/src/dx.measure.js"></script>
+    <script type="text/javascript" src="../../lib/dxjs/src/dx.string.js"></script>
+    <script type="text/javascript" src="../../lib/dxjs/src/dx.tmpl.js"></script>
+	<script src="../../lib/dropdown/src/js/dropdown.js"></script>
+	<script src="../../lib/selectbox/src/js/selectbox.js"></script>
+	<script src="../../src/js/switchbox.js"></script>
+</head>
+<body>
+	<div class="control control-switchBox">
+		<span class="control--wrap">
+			<select id="Switchbox_Id" class="band musicians doors" data-switchbox>
+				<option value="jim" class="deceased vocals">Jim Morrison</option>
+				<option value="ray" class="deceased keyboards">Ray Manzarek</option>
+				<option value="john" class="drums">John Densmore</option>
+				<option value="robby" class="guitar">Robby Krieger</option>
+			</select>
+		</span>
+	</div>
+	<div class="control control-switchBox">
+		<span class="control--wrap">
+			<select id="Switchbox_Id2" class="band musicians doors" data-switchbox>
+				<option value="jim" class="deceased vocals">Jim Morrison</option>
+				<option value="ray" class="deceased keyboards">Ray Manzarek</option>
+				<option value="john" class="drums">John Densmore</option>
+				<option value="robby" class="guitar">Robby Krieger</option>
+			</select>
+		</span>
+	</div>
+
+	<button id="disable" type="button">disable</button>
+	<button id="enable" type="button">enable</button>
+
+	<script>
+		var select1 = document.getElementById('Switchbox_Id'),
+			select2 = document.getElementById('Switchbox_Id2'),
+			disable = document.getElementById('disable'),
+			enable = document.getElementById('enable'),
+            switchbox1,
+			switchbox2;
+
+        switchbox1 = new Switchbox(select1);
+		switchbox2 = new Switchbox(select2);
+
+		Switchbox.disable(select2);
+		disable.addEventListener('click', function(e) {
+			Switchbox.disable(select2);
+		}, true);
+
+		enable.addEventListener('click', function(e) {
+			Switchbox.enable(select2);
+		}, true);
+
+	</script>
+
+
+</body>
+</html>

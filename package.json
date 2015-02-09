@@ -1,0 +1,26 @@
+{
+  "name": "Switchbox",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "bower": "1.3.8",
+    "grunt": "^0.4.4",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-jshint": "^0.6.5",
+    "grunt-contrib-stylus": "^0.20.0",
+    "grunt-interactive-shell": "git://github.com/devex-web-frontend/grunt-interactive-shell#v1.0.0",
+    "grunt-jscs": "^1.0.0",
+    "grunt-jsdoc": "^0.5.7",
+    "grunt-jsdoc-to-markdown": "^0.4.2",
+    "grunt-karma": "^0.8.2",
+    "karma": "https://registry.npmjs.org/karma/-/karma-0.12.4.tgz",
+    "karma-chrome-launcher": "^0.1.3",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-jasmine": "^0.1.5",
+    "karma-ng-scenario": "^0.1.0",
+    "karma-phantomjs-launcher": "https://registry.npmjs.org/karma-phantomjs-launcher/-/karma-phantomjs-launcher-0.1.4.tgz",
+    "karma-script-launcher": "^0.1.0"
+  }
+}
